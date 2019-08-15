@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<div id="Div">
+			<input v-model="mesg" placeholder="edit me"/>
+			<p>msg:{{mesg}}</p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+			el:'#Div',
+			data:{
+				mesg:''
+			}
+		});
+	</script>
+</html>
